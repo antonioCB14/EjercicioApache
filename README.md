@@ -23,6 +23,7 @@ sudo mkdir -p /var/www/chip555.org/html
 Damos permisos:
 
 sudo chmod -R 777 /var/www
+
 Creamos el sitio web en cada una de las paginas:
 
 echo "Gato" > /var/www/gato.com/html/index.html
