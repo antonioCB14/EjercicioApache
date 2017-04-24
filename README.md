@@ -37,8 +37,11 @@ echo "Chip 555" > /var/www/chip555.org/html/index.html
 Copiamos la configuracion por defecto para nuestros sitios web:
 
 sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/gato.com.conf
+
 sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/mosquito.com.conf
+
 sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/escherichiacoli.es.conf
+
 sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/chip555.org.conf
 
 Configuramos los ficheros:
@@ -46,12 +49,19 @@ Configuramos los ficheros:
 www.gato.com
 
 <VirtualHost *:80>
+
     ServerAdmin admin@gato.com
+    
     ServerName gato.com
+    
     ServerAlias www.gato.com
+    
     DocumentRoot /var/www/gato.com/html
+    
     ErrorLog ${APACHE_LOG_DIR}/error.log
+    
     CustomLog ${APACHE_LOG_DIR}/access.log combined
+    
 </VirtualHost>
 
 www.mosquito.com
