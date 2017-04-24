@@ -26,8 +26,11 @@ sudo chmod -R 777 /var/www
 Creamos el sitio web en cada una de las paginas:
 
 echo "Gato" > /var/www/gato.com/html/index.html
+
 echo "Mosquito" > /var/www/mosquito.com/html/index.html
+
 echo "Bacteria escherichiacoli" > /var/www/escherichiacoli.es/html/index.html
+
 echo "Chip 555" > /var/www/chip555.org/html/index.html
 
 Copiamos la configuracion por defecto para nuestros sitios web:
